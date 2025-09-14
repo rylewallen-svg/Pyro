@@ -24,4 +24,4 @@ Pyro is fierce, loyal, cocky, jolly, a little quick temper
 
 ## Configuration
 
-- Requires an OpenAI API key. Set it as an environment variable or edit `ai_bot.py`.
+git+https://github.com/kramcat/CharacterAI.git
