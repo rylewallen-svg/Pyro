@@ -1,4 +1,4 @@
-# Pyro
+# Pyro-AI-Chat-Bot 
 
 Pyro is an AI chatbot with a custom personality and background.
 
