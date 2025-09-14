@@ -1,0 +1,23 @@
+import openai
+import os
+
+openai.api_key = os.getenv("OPENAI_API_KEY")  # Read API key from environment variable
+
+def chat(prompt):
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=100
+    )
+    return response.choices[0].message.content.strip()
+
+if __name__ == "__main__":
+    print("So trainer what crazy stuff do you have in mind?” *pyro looks at you excited*")
+    print("Whats up? (Type 'exit' to quit)")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ["exit", "quit"]:
+            print("See ya later trainer!")
+            break
+        ai_response = chat(user_input)
+        print(f"Pyro: {ai_response}")
